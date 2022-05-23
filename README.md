@@ -2,7 +2,7 @@
 
 HTMLLabel extend UILabel, supports html-like markups for rich text display. Detecting and handling touches on the link
 
-<img src="./Screenshot/View1.png" alt="View1" width="250"/>
+<img src="./Screenshots/View1.png" alt="View1" width="250"/>
 
 ## Features
 
@@ -19,7 +19,7 @@ HTMLLabel extend UILabel, supports html-like markups for rich text display. Dete
 #import "HTMLLabel.h"
 ```
 
-<img src="./Screenshot/View2.png" alt="View2" width="250"/>
+<img src="./Screenshots/View2.png" alt="View2" width="250"/>
 
 2. set HTML text and assign delegate to do tapped link function
 
@@ -46,7 +46,7 @@ htmlLabel.linkDelegate = self
 
 1. Drag HTMLLabel.h and HTMLLabel.m into your project. assign HTMLLabel to UILabel class of Storyboard
 
-<img src="./Screenshot/View2.png" alt="View2" width="250"/>
+<img src="./Screenshots/View2.png" alt="View2" width="250"/>
 
 2. set HTML text and assign delegate to do tapped link function
 
