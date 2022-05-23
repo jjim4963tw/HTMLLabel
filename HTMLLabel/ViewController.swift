@@ -7,13 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, HTMLLabelDelegate {
 
+    @IBOutlet weak var label: HTMLLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+  
+        let linkStr = "Click <a href='http://google.com'>here</a> to Google."
+        
+//        self.label.setHTMLText(linkStr)
+//        self.label.linkDelegate = self
+        
+        self.label.setHTMLText(htmlText: linkStr)
+        self.label.linkDelegate = self
     }
 
-
+//    func tappedLinkTextFunction(_ linkString: URL) {
+//        UIApplication.shared.open(linkString, options: [:], completionHandler: nil)
+//    }
+    
+    func tappedLinkTextFunction(linkString: URL) {
+        UIApplication.shared.open(linkString, options: [:], completionHandler: nil)
+    }
 }
 

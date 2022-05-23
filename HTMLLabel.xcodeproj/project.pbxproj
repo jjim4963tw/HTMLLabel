@@ -16,6 +16,8 @@
 		38ECB3AA283B312C00916D6C /* HTMLLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB3A9283B312C00916D6C /* HTMLLabelTests.swift */; };
 		38ECB3B4283B312C00916D6C /* HTMLLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB3B3283B312C00916D6C /* HTMLLabelUITests.swift */; };
 		38ECB3B6283B312C00916D6C /* HTMLLabelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB3B5283B312C00916D6C /* HTMLLabelUITestsLaunchTests.swift */; };
+		38ECB3CD283B553900916D6C /* HTMLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB3CC283B553900916D6C /* HTMLLabel.m */; };
+		38ECB3D3283B5A2A00916D6C /* HTMLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB3D2283B5A2A00916D6C /* HTMLLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		38ECB3AF283B312C00916D6C /* HTMLLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTMLLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38ECB3B3283B312C00916D6C /* HTMLLabelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLLabelUITests.swift; sourceTree = "<group>"; };
 		38ECB3B5283B312C00916D6C /* HTMLLabelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLLabelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		38ECB3CA283B553900916D6C /* HTMLLabel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HTMLLabel-Bridging-Header.h"; sourceTree = "<group>"; };
+		38ECB3CB283B553900916D6C /* HTMLLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLLabel.h; sourceTree = "<group>"; };
+		38ECB3CC283B553900916D6C /* HTMLLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLLabel.m; sourceTree = "<group>"; };
+		38ECB3D2283B5A2A00916D6C /* HTMLLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		38ECB391283B312B00916D6C /* HTMLLabel */ = {
 			isa = PBXGroup;
 			children = (
+				38ECB3CA283B553900916D6C /* HTMLLabel-Bridging-Header.h */,
 				38ECB392283B312B00916D6C /* AppDelegate.swift */,
 				38ECB394283B312B00916D6C /* SceneDelegate.swift */,
 				38ECB396283B312B00916D6C /* ViewController.swift */,
@@ -106,6 +113,8 @@
 				38ECB39B283B312C00916D6C /* Assets.xcassets */,
 				38ECB39D283B312C00916D6C /* LaunchScreen.storyboard */,
 				38ECB3A0283B312C00916D6C /* Info.plist */,
+				38ECB3CF283B554500916D6C /* OBJC */,
+				38ECB3CE283B553E00916D6C /* Swift */,
 			);
 			path = HTMLLabel;
 			sourceTree = "<group>";
@@ -125,6 +134,23 @@
 				38ECB3B5283B312C00916D6C /* HTMLLabelUITestsLaunchTests.swift */,
 			);
 			path = HTMLLabelUITests;
+			sourceTree = "<group>";
+		};
+		38ECB3CE283B553E00916D6C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				38ECB3D2283B5A2A00916D6C /* HTMLLabel.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		38ECB3CF283B554500916D6C /* OBJC */ = {
+			isa = PBXGroup;
+			children = (
+				38ECB3CB283B553900916D6C /* HTMLLabel.h */,
+				38ECB3CC283B553900916D6C /* HTMLLabel.m */,
+			);
+			path = OBJC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +221,7 @@
 				TargetAttributes = {
 					38ECB38E283B312B00916D6C = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 					38ECB3A4283B312C00916D6C = {
 						CreatedOnToolsVersion = 13.4;
@@ -259,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				38ECB397283B312B00916D6C /* ViewController.swift in Sources */,
+				38ECB3D3283B5A2A00916D6C /* HTMLLabel.swift in Sources */,
 				38ECB393283B312B00916D6C /* AppDelegate.swift in Sources */,
+				38ECB3CD283B553900916D6C /* HTMLLabel.m in Sources */,
 				38ECB395283B312B00916D6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7ZY9GQL2C;
@@ -453,6 +483,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jim.HTMLLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HTMLLabel/HTMLLabel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7ZY9GQL2C;
@@ -481,6 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jim.HTMLLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HTMLLabel/HTMLLabel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
